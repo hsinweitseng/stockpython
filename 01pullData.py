@@ -45,5 +45,6 @@ def pullData(stock):
 
 while True:       
     for eachStock in stocksToPull:
+	print 'git version control test'
         pullData(eachStock)
     time.sleep(5)
