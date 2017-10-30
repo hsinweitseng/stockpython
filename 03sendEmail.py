@@ -20,7 +20,7 @@ def get_attachment(img):
         msg.set_payload(bytes.getvalue())
         encoders.encode_base64(msg)
         msg.add_header('Content-Disposition', 'attachment',
-                       filename='image.jpeg')
+                       filename='~\Desktop\stockpython\status.txt')
         return msg
 
 def main():
@@ -62,9 +62,9 @@ if __name__ == '__main__':
         print 'current time=',currentTime
 
 
-while True:
-    main()
-    currentTime=currentTime+300
-    print 'current time=',currentTime
-    time.sleep(300)
-    print 'done with sending'
+#while True:
+#    main()
+#    currentTime=currentTime+300
+#    print 'current time=',currentTime
+#    time.sleep(300)
+#    print 'done with sending'
